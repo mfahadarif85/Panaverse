@@ -2,6 +2,4 @@
  Print each person’s name by accessing each element in the list, one at a time. */
 
 const names = ["Zamin", "Omer", "Bilal"];
-console.log(names[0]);
-console.log(names[1]);
-console.log(names[2]);
+names.forEach((name) => console.log(name));

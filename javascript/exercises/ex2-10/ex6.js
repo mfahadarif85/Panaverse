@@ -6,4 +6,3 @@ Then print the name after striping the white spaces. */
 let userName = `\n\tMuhammad Fahad\n`;
 console.log(userName);
 console.log(userName.trim());
-console.log(userName.trim());
