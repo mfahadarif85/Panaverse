@@ -9,3 +9,27 @@
 • Reverse the order of your list again. Print the list to show it’s back to its original order.
 • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed. */
+
+let locations = [
+  "Gilgit",
+  "Deosai",
+  "Bahawalpur",
+  "FairyMeadows",
+  "Hunza",
+  "Chitral",
+];
+console.log(locations);
+const sorted = [...locations].sort();
+console.log(sorted);
+console.log(locations);
+const revSorted = [...locations].sort((a, b) => (a > b ? -1 : a < b ? 1 : 0));
+console.log(revSorted);
+console.log(locations);
+locations.reverse();
+console.log(locations);
+locations.reverse();
+console.log(locations);
+locations.sort();
+console.log(locations);
+locations.sort((a, b) => (a > b ? -1 : a < b ? 1 : 0));
+console.log(locations);
