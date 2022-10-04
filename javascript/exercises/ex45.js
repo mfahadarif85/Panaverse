@@ -5,10 +5,11 @@
     Print the Object that’s returned to make sure all the information was stored correctly. */
 
 let carInfo = [];
-function addCarInfo(make, model) {
+function addCarInfo() {
   for (let i = 0; i < arguments.length; i++) {
     carInfo.push(arguments[i]);
   }
+  return carInfo;
 }
 
-addCarInfo({ make: toyota, model: corolla, year: 1990 });
+console.log(addCarInfo({ make: "toyota", model: "corolla", year: "1990" }));
