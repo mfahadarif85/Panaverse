@@ -1,3 +1,11 @@
+import Link from "next/link";
 export default function Address() {
-  return <div>Address</div>;
+  return (
+    <div>
+      <div>Address</div>
+      <div>
+        <Link href='/'>Home</Link>
+      </div>
+    </div>
+  );
 }
