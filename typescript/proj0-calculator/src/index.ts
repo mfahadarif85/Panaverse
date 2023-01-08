@@ -2,21 +2,38 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 let answers = await inquirer.prompt([
   {
-    name: "name",
-    type: "string",
-    message: "Enter your name:",
+    name: "firstNum",
+    type: "number",
+    message: "Enter First Number:",
   },
   {
-    name: "age",
+    name: "secondNum",
     type: "number",
-    message: "Enter your age:",
+    message: "Enter second number :",
+  },
+  {
+    name: "operator",
+    type: "list",
+    message: "Select an operation",
+    choices: ["Add", "Subtract", "Multiply", "Divide"],
   },
 ]);
 
-console.log(
-  chalk.blue(
-    `In Sha Allah, in ${60 - answers.age} years, ${
-      answers.name
-    } will be 60 years old!`
-  )
-);
+let result = 0;
+
+switch (answers.operator) {
+  case "Add":
+    result = answers.firstNum + answers.secondNum;
+    break;
+  case "Subtract":
+    result = answers.firstNum - answers.secondNum;
+    break;
+  case "Multipy":
+    result = answers.firstNum * answers.secondNum;
+    break;
+  case "Divide":
+    result = answers.firstNum / answers.secondNum;
+    break;
+}
+
+console.log(result);
