@@ -15,15 +15,15 @@ export default function Home() {
           (This is a sample website - you’ll be building a site like this on{" "}
           <a href='https://nextjs.org/learn'>our Next.js tutorial</a>.)
         </p>
-        <Link href='/contact/contact'>Contact Us</Link>
+        <Link href='/contact'>Contact Me</Link>
         <div>
-          <a href='/about/about'>About Us</a>
-        </div>
-        <div>
-          <a href='https://www.google.com'>Google Homepage</a>
+          <Link href='/about'>About Me</Link>
         </div>
         <div>
           <Link href='/posts/first-post'>First Post</Link>
+        </div>
+        <div>
+          <Link href='/reviews'>Reviews</Link>
         </div>
       </section>
     </Layout>
