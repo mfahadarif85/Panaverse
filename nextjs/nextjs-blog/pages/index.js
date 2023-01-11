@@ -22,9 +22,6 @@ export default function Home({ allPostsData }) {
           <Link href='/about'>About Me</Link>
         </div>
         <div>
-          <Link href='/posts/first-post'>First Post</Link>
-        </div>
-        <div>
           <Link href='/reviews'>Reviews</Link>
         </div>
       </section>
